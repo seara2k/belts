@@ -9,8 +9,8 @@ using namespace std;
 
 
 
-class student {
-public:
+struct student {
+//public:
 	student(const string& new_name,
 	        const string& new_surname,
 	        const int& new_day_of_birth,
@@ -26,7 +26,7 @@ public:
 
 
 	}
-private:
+//private:
 	string name;
 	string surname;
 	int day_of_birth;
@@ -36,8 +36,15 @@ private:
 
 
 class God {
-	void name(K) {
-		cout << sets[]
+	void add(const string& new_name,
+	        const string& new_surname,
+	        const int& new_day_of_birth,
+	        const int& new_month_of_birth,
+	        const int& new_year_of_birth){
+		sets.pushback({new_name,new_surname,new_day_of_birth,new_month_of_birth,new_year_of_birth});
+	}
+	void name(const int& K) {
+		cout << sets[K][0] << " " << sets[K][1]
 	}
 
 
