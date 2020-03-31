@@ -43,11 +43,16 @@ struct student {
 
 int main() {
 	int count;
-	vector<student> list();
+	string input1;
+	string input2;
+	int input3;
+	int input4;
+	int input5;
+	vector<student> list;
 	cin >> count;
 	for (int i; i < count; ++i) {
-		cin >> input1 >> input2 >> input3 >> input4;
-		list.push_back(input1 , input2 , input3 , input4)
+		cin >> input1 >> input2 >> input3 >> input4 >> input5;
+		list.push_back({input1 , input2 , input3 , input4, input5});
 	}
 	cout << (list[0]).day_of_birth;
 	return 0;
