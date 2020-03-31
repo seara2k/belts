@@ -49,7 +49,7 @@ int main() {
 		else {
 			if (input1 == "name") list[k - 1].name_print();
 			else if (input1 == "date") list[k - 1].date_print();
-			else cout << "bad request";
+			else cout << "bad request" << endl;
 		}
 	}
 	return 0;
