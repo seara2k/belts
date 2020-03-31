@@ -5,8 +5,6 @@
 
 using namespace std;
 
-
-
 struct student {
 	student (const string& new_name,
 	         const string& new_surname,
@@ -20,19 +18,9 @@ struct student {
 		month_of_birth =  new_month_of_birth;
 		year_of_birth = new_year_of_birth;
 	}
-
-
-	/*void add(const string& new_name,
-	         const string& new_surname,
-	         const int& new_day_of_birth,
-	         const int& new_month_of_birth,
-	         const int& new_year_of_birth) {
-		sets.push_back({new_name, new_surname, new_day_of_birth, new_month_of_birth, new_year_of_birth});
-	}*/
-	/*void name(const int& K) {
-		cout << sets[K - 1][0] << " " << sets[K - 1][1];
-	}*/
-
+	void name(const&int K) {
+		cout << student.name << " " << student.surname << endl
+	}
 	string name;
 	string surname;
 	int day_of_birth;
@@ -40,20 +28,27 @@ struct student {
 	int year_of_birth;
 };
 
-
 int main() {
-	int count;
-	string input1;
-	string input2;
-	int input3;
-	int input4;
-	int input5;
+	int count, number;
+	string input1, input2;
+	int input3, input4, input5;
 	vector<student> list;
 	cin >> count;
 	for (int i; i < count; ++i) {
 		cin >> input1 >> input2 >> input3 >> input4 >> input5;
 		list.push_back({input1 , input2 , input3 , input4, input5});
 	}
-	cout << (list[0]).day_of_birth;
+	cin >> count;
+	for (int i; i < count; ++i) {
+		cin >> input1;
+		cin >> number;
+		if (input1 == "date") {
+
+
+
+
+		}
+	}
 	return 0;
+
 }
