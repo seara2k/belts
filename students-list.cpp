@@ -44,7 +44,7 @@ class God {
 		sets.pushback({new_name,new_surname,new_day_of_birth,new_month_of_birth,new_year_of_birth});
 	}
 	void name(const int& K) {
-		cout << sets[K][0] << " " << sets[K][1]
+		cout << sets[K-1][0] << " " << sets[K-1][1]
 	}
 
 
@@ -54,6 +54,10 @@ private:
 
 
 int main() {
-
+	int count;
+	God God;
+	God.add({Ivan Ivanov, 1, 1, 1901});
+	God.add({Petr Petrox, 2, 2, 1902});
+	God.name(1);
 	return 0;
 }
