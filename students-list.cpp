@@ -45,7 +45,7 @@ int main() {
 	cin >> count;
 	for (int i = 0; i < count; ++i) {
 		cin >> input1 >> k;
-		if (k > mind)cout << "bad request";
+		if ((k > mind) || (k <= 0))cout << "bad request" << endl;
 		else {
 			if (input1 == "name") list[k - 1].name_print();
 			else if (input1 == "date") list[k - 1].date_print();
