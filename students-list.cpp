@@ -22,7 +22,7 @@ struct student {
 		cout << name << " " << surname << endl;
 	}
 	void date_print() {
-		cout << day_of_birth << " " << month_of_birth << " " << year_of_birth << " " << endl;
+		cout << day_of_birth << "." << month_of_birth << "." << year_of_birth << "." << endl;
 	}
 	string name;
 	string surname;
