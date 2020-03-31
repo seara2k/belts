@@ -32,7 +32,7 @@ struct student {
 };
 
 int main() {
-	int count, k;
+	int count, k, mind;
 	string input1, input2;
 	int input3, input4, input5;
 	vector<student> list;
@@ -41,13 +41,16 @@ int main() {
 		cin >> input1 >> input2 >> input3 >> input4 >> input5;
 		list.push_back({input1 , input2 , input3 , input4, input5});
 	}
+	mind = count;
 	cin >> count;
 	for (int i = 0; i < count; ++i) {
 		cin >> input1 >> k;
-
-		if (input1 == "name") list[k - 1].name_print();
-		else if (input1 == "date") list[k - 1].date_print();
-		else cout << "bad request";
+		if (k > mind)cout << "bad request";
+		else {
+			if (input1 == "name") list[k - 1].name_print();
+			else if (input1 == "date") list[k - 1].date_print();
+			else cout << "bad request";
+		}
 	}
 	return 0;
 
