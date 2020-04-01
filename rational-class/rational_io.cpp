@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 using namespace std;
 
 
@@ -62,7 +63,7 @@ Rational operator-(const Rational& lhs, const Rational&rhs) {
 
 
 Rational operator*(const Rational& lhs, const Rational&rhs) {
-	return Rational((lhs.Numerator() * rhs.Numerator()), (rhs.Denominator() * rhs.Denominator()));
+	return Rational((lhs.Numerator() * lhs.Numerator()), (rhs.Denominator() * rhs.Denominator()));
 }
 
 Rational operator/(const Rational& lhs, const Rational&rhs) {
@@ -76,10 +77,14 @@ bool operator==(const Rational& lhs, const Rational&rhs) {
 
 istream& operator>>(istream& stream, Rational& rational) {
 	int input1 = 0, input2 = 0;
-	stream >> input1;
-	stream.ignore(1);
-	stream >> input2;
-	rational = {input1, input2};
+	if (stream) {
+		stream >> input1;
+		stream.ignore(1);
+		stream >> input2;
+		rational = {input1, input2};
+		stream.ignore(1);
+
+	}
 	return stream;
 
 }
@@ -92,12 +97,6 @@ ostream& operator<<(ostream& stream, const Rational& rational) {
 }
 
 int main() {
-
-
-	Rational r;
-	cin >> r;
-	cout << r;
-
 	{
 		ostringstream output;
 		output << Rational(-6, 8);
