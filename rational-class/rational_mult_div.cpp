@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-int smart_nod_finder(int a, int b) {
+long smart_nod_finder(long a, long b) {
 	a = abs(a);
 	b = abs(b);
 	while (a != b) {
@@ -16,10 +16,10 @@ int smart_nod_finder(int a, int b) {
 class Rational {
 public:
 
-	Rational(int input_numerator = 0, int input_denominator = 1) {
+	Rational(long input_numerator = 0, long input_denominator = 1) {
 
 
-		int sign = 0;
+		long sign = 0;
 
 		if (input_numerator == 0) {
 			numerator = 0;
@@ -31,7 +31,7 @@ public:
 				sign = 1;
 			else
 				sign = -1;
-			int nod = smart_nod_finder(input_denominator, input_numerator);
+			long nod = smart_nod_finder(input_denominator, input_numerator);
 			input_numerator = abs(input_numerator);
 			input_denominator = abs(input_denominator);
 			numerator = input_numerator / nod * sign;
@@ -39,18 +39,18 @@ public:
 		}
 	}
 
-	int Numerator() const {
+	long Numerator() const {
 		return numerator;
 	}
 
-	int Denominator() const {
+	long Denominator() const {
 		return denominator;
 	}
 
 private:
 
-	int numerator;
-	int denominator;
+	long numerator;
+	long denominator;
 };
 
 Rational operator+(const Rational& lhs, const Rational&rhs) {
@@ -63,7 +63,7 @@ Rational operator-(const Rational& lhs, const Rational&rhs) {
 
 
 Rational operator*(const Rational& lhs, const Rational&rhs) {
-	return Rational((lhs.Numerator() * lhs.Numerator()), (rhs.Denominator() * rhs.Denominator()));
+	return Rational((lhs.Numerator() * rhs.Numerator()), (lhs.Denominator() * rhs.Denominator()));
 }
 
 Rational operator/(const Rational& lhs, const Rational&rhs) {
@@ -107,6 +107,19 @@ int main() {
 			return 3;
 		}
 	}
+
+
+
+	{
+		Rational r1(2, 3);
+		Rational r2(3, 2);
+		bool equal = (r1 * r2) == Rational(1, 1);
+		if (!equal) {
+			cout << "lox" << endl;
+			return 1;
+		}
+	}
+
 
 	cout << "OK" << endl;
 	return 0;
