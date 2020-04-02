@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-long smart_nod_finder(long a, long b) {
+int smart_nod_finder(int a, int b) {
 	a = abs(a);
 	b = abs(b);
 	while (a != b) {
@@ -16,10 +16,17 @@ long smart_nod_finder(long a, long b) {
 class Rational {
 public:
 
-	Rational(long input_numerator = 0, long input_denominator = 1) {
+	Rational() {
+
+		numerator = 0;
+
+		denominator = 1;
+
+	}
+	Rational(int input_numerator, int input_denominator) {
 
 
-		long sign = 0;
+		int sign = 0;
 
 		if (input_numerator == 0) {
 			numerator = 0;
@@ -31,7 +38,7 @@ public:
 				sign = 1;
 			else
 				sign = -1;
-			long nod = smart_nod_finder(input_denominator, input_numerator);
+			int nod = smart_nod_finder(input_denominator, input_numerator);
 			input_numerator = abs(input_numerator);
 			input_denominator = abs(input_denominator);
 			numerator = input_numerator / nod * sign;
@@ -39,18 +46,18 @@ public:
 		}
 	}
 
-	long Numerator() const {
+	int Numerator() const {
 		return numerator;
 	}
 
-	long Denominator() const {
+	int Denominator() const {
 		return denominator;
 	}
 
 private:
 
-	long numerator;
-	long denominator;
+	int numerator;
+	int denominator;
 };
 
 Rational operator+(const Rational& lhs, const Rational&rhs) {
@@ -70,19 +77,20 @@ Rational operator/(const Rational& lhs, const Rational&rhs) {
 	return Rational((lhs.Numerator() * rhs.Denominator()), (lhs.Denominator() * rhs.Numerator()));
 }
 
-bool operator==(const Rational& lhs, const Rational&rhs) {
+const bool operator==(const Rational& lhs, const Rational&rhs) {
 	return ((lhs.Numerator() == rhs.Numerator()) && (lhs.Denominator() == rhs.Denominator()));
 
 }
 
+
 istream& operator>>(istream& stream, Rational& rational) {
-	long input1 = 0, input2 = 0;
 	if (stream) {
+		int input1, input2;
+
 		stream >> input1;
 		stream.ignore(1);
 		stream >> input2;
 		rational = {input1, input2};
-		stream.ignore(1);
 
 	}
 	return stream;
@@ -136,6 +144,19 @@ int main() {
 		}
 	}
 
+	const string test { "5/7 10/8 1/2 -1/3 4/6" };
+	const string expected{ "5/7 5/4 1/2 -1/3 2/3 " };
+	istringstream input(test);
+	ostringstream output;
+	Rational r;
+	while (input >> r)
+		output << r << ' ';
+
+
+	if (expected == output.str()) cout << " Goog job!\n";
+
+	else cout << "Wrong format output!\n";
+	cout << output.str() << endl;
 	cout << "OK" << endl;
 	return 0;
 }
