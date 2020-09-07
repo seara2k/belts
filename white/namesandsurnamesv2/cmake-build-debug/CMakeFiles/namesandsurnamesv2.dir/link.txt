@@ -1,0 +1,3 @@
+"X:\CLion 2019.3\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\namesandsurnamesv2.dir/objects.a
+X:\dev\mingw64\mingw64\bin\ar.exe cr CMakeFiles\namesandsurnamesv2.dir/objects.a @CMakeFiles\namesandsurnamesv2.dir\objects1.rsp
+X:\dev\mingw64\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\namesandsurnamesv2.dir/objects.a -Wl,--no-whole-archive  -o namesandsurnamesv2.exe -Wl,--out-implib,libnamesandsurnamesv2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\namesandsurnamesv2.dir\linklibs.rsp

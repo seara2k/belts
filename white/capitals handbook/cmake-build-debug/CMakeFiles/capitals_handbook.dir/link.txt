@@ -1,0 +1,3 @@
+"X:\CLion 2019.3\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\capitals_handbook.dir/objects.a
+X:\dev\mingw64\mingw64\bin\ar.exe cr CMakeFiles\capitals_handbook.dir/objects.a @CMakeFiles\capitals_handbook.dir\objects1.rsp
+X:\dev\mingw64\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\capitals_handbook.dir/objects.a -Wl,--no-whole-archive  -o capitals_handbook.exe -Wl,--out-implib,libcapitals_handbook.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\capitals_handbook.dir\linklibs.rsp

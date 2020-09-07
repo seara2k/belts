@@ -1,0 +1,3 @@
+C:/Users/inssl/Desktop/VS/tolower/cmake-build-debug/CMakeFiles/tolower.dir
+C:/Users/inssl/Desktop/VS/tolower/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/inssl/Desktop/VS/tolower/cmake-build-debug/CMakeFiles/rebuild_cache.dir

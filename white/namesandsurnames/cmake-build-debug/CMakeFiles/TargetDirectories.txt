@@ -1,0 +1,3 @@
+C:/Users/inssl/Desktop/VS/namesandsurnames/cmake-build-debug/CMakeFiles/namesandsurnames.dir
+C:/Users/inssl/Desktop/VS/namesandsurnames/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/inssl/Desktop/VS/namesandsurnames/cmake-build-debug/CMakeFiles/rebuild_cache.dir
