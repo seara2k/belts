@@ -1,3 +1,0 @@
-C:/Users/inssl/Desktop/VS/abssort/cmake-build-debug/CMakeFiles/abssort.dir
-C:/Users/inssl/Desktop/VS/abssort/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/inssl/Desktop/VS/abssort/cmake-build-debug/CMakeFiles/rebuild_cache.dir
