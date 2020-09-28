@@ -1,3 +1,0 @@
-C:/Users/inssl/Desktop/VS/waysofinitialization/cmake-build-debug/CMakeFiles/waysofinitialization.dir
-C:/Users/inssl/Desktop/VS/waysofinitialization/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/inssl/Desktop/VS/waysofinitialization/cmake-build-debug/CMakeFiles/rebuild_cache.dir

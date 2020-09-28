@@ -1,3 +1,0 @@
-"X:\CLion 2019.3\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\lololololol.dir/objects.a
-X:\dev\mingw64\mingw64\bin\ar.exe cr CMakeFiles\lololololol.dir/objects.a @CMakeFiles\lololololol.dir\objects1.rsp
-X:\dev\mingw64\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\lololololol.dir/objects.a -Wl,--no-whole-archive  -o lololololol.exe -Wl,--out-implib,liblololololol.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\lololololol.dir\linklibs.rsp

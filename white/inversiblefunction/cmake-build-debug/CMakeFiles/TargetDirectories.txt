@@ -1,3 +1,0 @@
-C:/Users/inssl/Desktop/VS/inversiblefunction/cmake-build-debug/CMakeFiles/inversiblefunction.dir
-C:/Users/inssl/Desktop/VS/inversiblefunction/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/inssl/Desktop/VS/inversiblefunction/cmake-build-debug/CMakeFiles/rebuild_cache.dir

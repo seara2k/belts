@@ -1,3 +1,0 @@
-C:/Users/inssl/Desktop/VS/capitals handbook/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/inssl/Desktop/VS/capitals handbook/cmake-build-debug/CMakeFiles/capitals_handbook.dir
-C:/Users/inssl/Desktop/VS/capitals handbook/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,4 +1,0 @@
-﻿  test.cpp
-C:\Users\inssl\Desktop\VS\test\test\test.cpp(102,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\inssl\Desktop\VS\test\test\test.cpp(113,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  test.vcxproj -> C:\Users\inssl\Desktop\VS\test\test\x64\Debug\test.exe

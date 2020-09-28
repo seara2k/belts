@@ -1,3 +1,0 @@
-"X:\CLion 2019.3\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\waysofinitialization.dir/objects.a
-X:\dev\mingw64\mingw64\bin\ar.exe cr CMakeFiles\waysofinitialization.dir/objects.a @CMakeFiles\waysofinitialization.dir\objects1.rsp
-X:\dev\mingw64\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\waysofinitialization.dir/objects.a -Wl,--no-whole-archive  -o waysofinitialization.exe -Wl,--out-implib,libwaysofinitialization.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\waysofinitialization.dir\linklibs.rsp

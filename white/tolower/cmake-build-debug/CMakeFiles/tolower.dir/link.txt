@@ -1,3 +1,0 @@
-"X:\CLion 2019.3\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\tolower.dir/objects.a
-X:\dev\mingw64\mingw64\bin\ar.exe cr CMakeFiles\tolower.dir/objects.a @CMakeFiles\tolower.dir\objects1.rsp
-X:\dev\mingw64\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\tolower.dir/objects.a -Wl,--no-whole-archive  -o tolower.exe -Wl,--out-implib,libtolower.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tolower.dir\linklibs.rsp
