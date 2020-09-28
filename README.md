@@ -1,4 +1,4 @@
-# Yandex-MIPT-Belts-Course
+# Yandex-Course-MIPT-Belts
 
 A hard course to become GOD in C++.
 
